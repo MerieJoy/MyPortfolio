@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #201E43;
+    background-color: #EEEEEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #134B70;
+}
+/* Navbar */
+.navbar {
+    background-color: #201E43; /* Dark background color */
+    color: #EEEEEE; /* Light font color */
+}
+
+.navbar .navbar-brand {
+    color: #EEEEEE;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar-brand img {
+    height: 90px; /* Adjust the height as needed */
+    width: 150px; /* Maintain aspect ratio */
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #EEEEEE;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #508C9B; /* Accent color on hover */
+}
+
+.navbar .navbar-toggler {
+    border-color: #EEEEEE;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(238, 238, 238, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #508C9B; /* Accent color for active link */
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: url('img/banner.jpg') center center/cover no-repeat;
+    height: 70vh;
+    color: black;
+    font-weight: bolder;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem; /* Adjust as needed */
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-section a {
+    background-color: #508C9B;
+    border-color: #508C9B;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hero-section a:hover {
+    background-color: #134B70;
+    border-color: #134B70;
+}
+
+/* About Section Image */
+.about-section{
+    margin: 3rem;
+    background-color: lightgray
+}
+.about-img {
+    border-radius: 50%; /* Makes the image round */
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 1); /* Shadow on the left side */
+    width: 100%; /* Ensures the image is responsive */
+    max-width: 400px; /* Adjust based on your design */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin-left: auto; /* Center-align if needed */
+}
+.myName{
+    font-size: 2rem;
+}
+.about-text{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #EEEEEE;
+    color: #201E43;
+}
+
+.skills-section h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #134B70;
+    margin-bottom: 10px;
+}
+
+.skill-card {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: #201E43;
+    color: #EEEEEE;
+}
+
+.skill-card h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #134B70;
+}
+
+.skill-card p {
+    font-family: 'Roboto', sans-serif;
+    color: #201E43;
+}
+
+.skill-card:hover h3,
+.skill-card:hover p {
+    color: #EEEEEE;
+}
+/* Skills Section - Equal Height Cards */
+.skills-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+    min-height: 100%; /* Ensures the card takes full height */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.skill-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: #201E43;
+    color: #EEEEEE;
+}
+
+.skill-card h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #134B70;
+}
+
+.skill-card p {
+    font-family: 'Roboto', sans-serif;
+    color: #201E43;
+}
+
+.skill-card:hover h3,
+.skill-card:hover p {
+    color: #EEEEEE;
+}
+.skills-text{
+    padding-bottom: 30px;
+}
+
+/* Portfolio Section */
+.portfolio-section h2 {
+    color: #201E43;
+}
+
+.portfolio-section .card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-section .card:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-section .card-img-top {
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #EEEEEE;
+    color: #201E43;
+}
+
+.contact-section h2 {
+    color: #134B70;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon {
+    color: #201E43;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #201E43;
+    color: #EEEEEE;
+}
+
+.card:hover .social-icon {
+    color: #EEEEEE;
+}
+
+.card:hover .card-text {
+    color: #EEEEEE;
+}
+
+.social-icon i {
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.card-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+/* Footer */
+.footer-section {
+    background-color: #201E43;
+}
+
+.footer-section p {
+    margin: 0;
+}
+/* Navbar Links */
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Portfolio Cards */
+.portfolio-section .card {
+    transition: transform 0.3s ease-in-out;
+}
+/* Resume Section */
+.resume-section {
+    background-color: #EEEEEE;
+    color: #201E43;
+}
+
+.resume-section h2 {
+    color: #134B70;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.resume-section .btn-primary {
+    background-color: #508C9B;
+    border-color: #508C9B;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.resume-section .btn-primary:hover {
+    background-color: #134B70;
+    border-color: #134B70;
+}
+.footer {
+    background-color: #201E43; /* Dark background color */
+    color: #EEEEEE; /* Light font color */
+}
